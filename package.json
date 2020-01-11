@@ -1,0 +1,30 @@
+{
+  "name": "INFRAME",
+  "version": "1.0.0",
+  "description": "## Work task",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon scrape.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModestasBar/INFRAME.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ModestasBar/INFRAME/issues"
+  },
+  "homepage": "https://github.com/ModestasBar/INFRAME#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^2.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
