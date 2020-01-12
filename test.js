@@ -1,39 +1,130 @@
-// const dummy = [ 
-// ' Friday 1. May 2020',
-// '11:20',
-// '13:50',
-// '150.21',
-// 'Oslo-Gardermoen',
-// 'Riga',
-// '19:20',
-// '21:50',
-// '65.70',
-// 'Oslo-Gardermoen',
-// 'Riga' ]
+const dummy = { departArriveConnect:
+  [ '11:05',
+    '12:00',
+    '13:15',
+    '14:35',
+    '12:40',
+    '13:35',
+    '15:05',
+    '16:25',
+    '13:20',
+    '14:15',
+    '15:05',
+    '16:25',
+    '13:30',
+    '14:40',
+    '16:40',
+    '17:40',
+    '14:30',
+    '15:25',
+    '17:10',
+    '18:30',
+    '15:15',
+    '16:25',
+    '18:30',
+    '19:30',
+    '16:15',
+    '17:25',
+    '18:30',
+    '19:30',
+    '18:00',
+    '19:15',
+    '20:35',
+    '21:35' ],
+ departArriveDirect:
+  [ '07:50',
+    '09:35',
+    '11:15',
+    '12:55',
+    '15:25',
+    '17:00',
+    '16:15',
+    '17:50',
+    '18:15',
+    '19:55',
+    '19:40',
+    '21:15',
+    '11:05',
+    '14:35',
+    '12:40',
+    '16:25',
+    '13:20',
+    '16:25',
+    '13:30',
+    '17:40',
+    '14:30',
+    '18:30',
+    '15:15',
+    '19:30',
+    '16:15',
+    '19:30',
+    '18:00',
+    '21:35' ],
+ locationAirport:
+  [ 'Stockholm, Arlanda',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Oslo',
+    'Oslo',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Oslo',
+    'Oslo',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Oslo',
+    'Oslo',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Copenhagen',
+    'Copenhagen',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Oslo',
+    'Oslo',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Copenhagen',
+    'Copenhagen',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Copenhagen',
+    'Copenhagen',
+    'London, Heathrow',
+    'Stockholm, Arlanda',
+    'Copenhagen',
+    'Copenhagen',
+    'London, Heathrow' ],
+ price:
+  [ '116,49',
+    '116,49',
+    '116,49',
+    '116,49',
+    '116,49',
+    '116,49',
+    '180,51',
+    '119,11',
+    '119,11',
+    '128,38',
+    '180,51',
+    '128,38',
+    '128,38',
+    '128,38' ] }
 
 const sortData = (data) => {
-  const lowestPrice = Math.min(...data.filter(val => Number(val)));
-  let flightData = [];
-  data.forEach((val, i) => {
-  if(val == lowestPrice) {
-      flightData = data.slice(i - 2, i + 3);
-    }
-  })
-  return flightData
-}
+  
+    data.priceDepartArriveTime.
+  
 
-const data = (rawTimeAndData) => {
-  const flightDate = rawTimeAndData[0];
-  const flightInfo = sortData(rawTimeAndData);
-
-    return {
-      "Date" : flightDate,
-      "DepartDate" : flightInfo[0],
-      "ArrivalDate" : flightInfo[1],
-      "CheapestPrice" : flightInfo[2],
-      "DepartAirport" : flightInfo[3],
-      "ArriveAirport" : flightInfo[4]
-    }
-  }
 
 module.exports ;
