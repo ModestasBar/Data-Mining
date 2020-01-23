@@ -5,7 +5,7 @@
   "main": "scrape.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon scrape2.js"
+    "start": "nodemon scrape.js"
   },
   "repository": {
     "type": "git",
