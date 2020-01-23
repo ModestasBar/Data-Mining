@@ -10,4 +10,5 @@ Data should apear in terminal console.
 ## Environment
 - Visual Studio Code
 - Node.js
+- Node package manager
 - puppeteer.js
