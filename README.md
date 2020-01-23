@@ -1,5 +1,13 @@
 # INFRAME
 
-**npm install** -- install necessary dependencies.<br>
-**node scrape.js** -- start first scrape.<br>
-**node scrape2.js** -- start second scrape. 
+## Instructions
+***npm install*** -- install necessary dependencies.<br>
+***node norwegian/browser.js*** -- start first scrape.<br>
+***node flysas/browser.js*** -- start second scrape.
+
+Data should apear in terminal console. 
+
+## Environment
+- Visual Studio Code
+- Node.js
+- puppeteer.js
