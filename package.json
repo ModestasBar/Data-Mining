@@ -19,12 +19,9 @@
   },
   "homepage": "https://github.com/ModestasBar/INFRAME#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
     "puppeteer": "^2.0.0",
     "puppeteer-extra": "^3.1.9",
-    "puppeteer-extra-plugin-stealth": "^2.4.9",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.5"
+    "puppeteer-extra-plugin-stealth": "^2.4.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

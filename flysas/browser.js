@@ -1,6 +1,6 @@
-const automation = require('./scrape.js');
-const auto = require('./autoSteps.js');
-const logic = require('./dataLogic.js');
+const automation = require('./scrape');
+const auto = require('./autoSteps');
+const logic = require('./dataLogic');
 
 const puppeteer = require('puppeteer-extra')
 // Enable stealth plugin with all evasions
