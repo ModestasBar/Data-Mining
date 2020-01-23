@@ -3,34 +3,33 @@ const dataLogic = require('./dataLogic');
 const autoSteps = require('./automationSteps');
 const scrape = require('./scrape');
 
-//Base url
+// Base url
 const initUrl = 'https://www.norwegian.com/en/';
 
 (async () => {
-  //Init settings
+  // Init settings
   const browser = await puppeteer.launch({
     headless: false,
-    defaultViewport: null
+    defaultViewport: null,
   });
   const page = await browser.newPage();
-  await page.goto(initUrl, {waitUntil: 'networkidle0'});
+  await page.goto(initUrl, { waitUntil: 'networkidle0' });
 
-  //All automated steps in init page
+  // All automated steps in init page
   await autoSteps.initPage(page);
 
-  //Scrape available days to flight
+  // Scrape available days to flight
   const days = await scrape.daysScrape(page);
 
-  //All automated steps for calender data
+  // All automated steps for calender data
   await autoSteps.calenderSteps(page);
-  
-  //Iterate all month
-  for(let i = 1; i <= days.length; i++) {
 
-    //Print cheapest flight each day
+  // Iterate all month
+  for (let i = 1; i <= days.length; i++) {
+    // Print cheapest flight each day
     console.log(dataLogic.data(await scrape.flightScrape(page)));
 
-    //Select next day
+    // Select next day
     await autoSteps.selectSteps(page, days[i]);
   }
   await browser.close();
