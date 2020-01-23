@@ -1,7 +1,7 @@
 const steps = async (page) => {
     //Select airports
     await page.type('#predictiveSearchFrom .predictiveSearchBox', 'ARN', {delay: 200});
-    await page.type('#predictiveSearchTo .predictiveSearchBox', 'LHR', {delay: 200});
+    await page.type('#predictiveSearchTo .predictiveSearchBox', 'Heathrow', {delay: 200});
 
     await page.waitForSelector('#resultTo .selected');
 
