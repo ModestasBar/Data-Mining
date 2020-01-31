@@ -19,13 +19,13 @@ const sortData = (rawData) => {
       cheapestConnectFlight.push({
         Price: val,
         Airports: rawData.airports[i],
-        'Depart/Arrive': rawData.time[i],
+        'Depart - Arrive': rawData.time[i],
       });
     } else if (!rawData.airports[i].includes('||') && val === cheapestDirect) {
       cheapestDirectFlight.push({
         Price: val,
         Airports: rawData.airports[i],
-        'Depart/Arrive': rawData.time[i],
+        'Depart - Arrive': rawData.time[i],
       });
     }
   });
