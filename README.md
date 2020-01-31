@@ -7,8 +7,8 @@
 ***node norwegian/browser.js*** -- start scrape.<br>
 ***node flysas/browser.js*** -- start scrape.
 
-***CSV files  apear in home directory</br>
-Open terminal window to track proccesses***
+_CSV files  apear in home directory</br>
+Open terminal window to track proccesses_
 
 ## Environment
 - npm version 6.13.6
